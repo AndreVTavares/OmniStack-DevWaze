@@ -1,5 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
+const routes = require('./routes')
 
 const app = express()
 
@@ -10,12 +11,7 @@ mongoose.connect('mongodb+srv://andre:andre@restfulapi-k8xmw.mongodb.net/DevWaze
 })
 
 app.use(express.json())
-
-
-
-app.get('/', (req, res) => {
-    return res.json({message: "Hello Omnistack!"})
-})
+app.use(routes)
 
 
 // ligação do servidor
