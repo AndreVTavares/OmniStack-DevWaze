@@ -1,10 +1,16 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
 import './global.css'
 import './App.css'
 import './Sidebar.css'
+import './Main.css'
 
 function App() {
+
+  useEffect({
+    
+  }, [])
+
   return (
       <div id="app">
         <aside>
@@ -35,7 +41,52 @@ function App() {
           </form>
         </aside>
         <main>
-
+          <ul>
+            <li className="dev-item">
+              <header>
+                <img src="https://avatars1.githubusercontent.com/u/31252029?s=460&v=4" alt="André Tavares"/>
+                <div className="user-info">
+                  <strong>André Tavares</strong>
+                  <span>ReactJS, React Native, Node.js</span>
+                </div>
+              </header>
+              <p>Tentando saber programar desde que me formei.</p>
+              <a href="https://github.com/AndreVTavares">Acessar perfil no Github</a>
+            </li>
+            <li className="dev-item">
+              <header>
+                <img src="https://avatars1.githubusercontent.com/u/31252029?s=460&v=4" alt="André Tavares"/>
+                <div className="user-info">
+                  <strong>André Tavares</strong>
+                  <span>ReactJS, React Native, Node.js</span>
+                </div>
+              </header>
+              <p>Tentando saber programar desde que me formei.</p>
+              <a href="https://github.com/AndreVTavares">Acessar perfil no Github</a>
+            </li>
+            <li className="dev-item">
+              <header>
+                <img src="https://avatars1.githubusercontent.com/u/31252029?s=460&v=4" alt="André Tavares"/>
+                <div className="user-info">
+                  <strong>André Tavares</strong>
+                  <span>ReactJS, React Native, Node.js</span>
+                </div>
+              </header>
+              <p>Tentando saber programar desde que me formei.</p>
+              <a href="https://github.com/AndreVTavares">Acessar perfil no Github</a>
+            </li>
+            <li className="dev-item">
+              <header>
+                <img src="https://avatars1.githubusercontent.com/u/31252029?s=460&v=4" alt="André Tavares"/>
+                <div className="user-info">
+                  <strong>André Tavares</strong>
+                  <span>ReactJS, React Native, Node.js</span>
+                </div>
+              </header>
+              <p>Tentando saber programar desde que me formei.</p>
+              <a href="https://github.com/AndreVTavares">Acessar perfil no Github</a>
+            </li>
+          </ul>
         </main>
       </div>
   );
